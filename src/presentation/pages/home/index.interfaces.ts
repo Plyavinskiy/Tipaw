@@ -1,11 +1,11 @@
 export interface HomeFormValues {}
 
-export interface HomePageData {
+export interface HomeData {
   announcements: AnnouncementData[];
   profile: ProfileData;
 }
 
-export interface HomePageProps extends HomePageData {}
+export interface HomeProps extends HomeData {}
 
 export interface AnnouncementData {
   id: string;

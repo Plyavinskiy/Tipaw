@@ -1,18 +1,13 @@
-import { useMemo } from "react";
-import type { ProfileData } from "../../../../presentation/pages";
 
-export const useGetProfile = () => {
-  const profile = useMemo(() => {
-    return {
-      name: "John Smith",
-      avatar: "https://tipaw.com/assets/Pierre-7VHVR6YF.webp",
-      globalProgress: 100, // %
-      litterVerified: true,
-      parentsVerified: true,
-      profilePictureIsVerified: true,
-      verified: true,
-    } as ProfileData;
-  }, []);
+// types
+import { ProfileData } from "../../../../presentation/pages/home/index.interfaces";
 
-  return { profile };
-};
+export const useGetProfile = (): ProfileData => ({
+  name: "John Smith",
+  avatar: "https://tipaw.com/assets/Pierre-7VHVR6YF.webp",
+  globalProgress: 100, // %
+  litterVerified: true,
+  parentsVerified: true,
+  profilePictureIsVerified: true,
+  verified: true,
+});

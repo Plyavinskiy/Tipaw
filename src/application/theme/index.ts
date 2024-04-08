@@ -4,13 +4,14 @@ export const theme = {
     alternate: "'Source Serif 4', serif",
   },
   color: {
-    tranparent: "transparent",
+    transparent: "transparent",
     light: {
       default: "white",
       tint: "#f8f8f8",
       tintDarker: "#f2f5f7",
       shadeLighter: "#f0f0f0",
       shade: "#d7dae0",
+      grey: "#ccc",
     },
     medium: {
       default: "#8c96a3",
@@ -41,6 +42,8 @@ export const theme = {
       glass: "rgba(90,206,232,.2)",
       glassShade: "rgba(90,206,232,.1)",
       darkerBlue: "#1c5b86",
+      lightBlue: '#3ca8c0',
+      violet: '#20253f',
     },
     black: {
       default: "#000",

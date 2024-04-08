@@ -1,13 +1,16 @@
-import { HomePage } from "../../../presentation/pages";
-import { FC } from "react";
+// components
+import Home from "../../../presentation/pages/home";
+// hooks
 import { useGetAnnouncements } from "./api/useGetAnnouncements";
 import { useGetProfile } from "./api/useGetProfile";
+// types
+import type { FC } from "react";
 
-const HomePageController: FC = () => {
-  const { announcements } = useGetAnnouncements();
-  const { profile } = useGetProfile();
+const HomeController: FC = () => {
+  const announcements = useGetAnnouncements();
+  const profile = useGetProfile();
 
-  return <HomePage announcements={announcements} profile={profile} />;
+  return <Home announcements={announcements} profile={profile} />;
 };
 
-export default HomePageController;
+export default HomeController;
